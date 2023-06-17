@@ -1,21 +1,30 @@
 import { TextInput, HelperText } from 'react-native-paper';
-import * as Styled from './styles';
+import styled from './styles';
 import { useState } from 'react';
+import {View, Text} from 'react-native'
 
 export const Input = ({ label, value, onChangeText, secureTextEntry, error, messageError }) => {
     const [secureMode, setSecureMode] = useState(secureTextEntry);
 
+
     return(
-        <Styled.Wrapper>
+        <View>
         <TextInput
             label={label}
             value={value}
             error={error}
+            placeholder='teste'
             secureTextEntry={secureMode}
             onChangeText={onChangeText}
-            // style={estilos.input}
+            style={styled.text}
+            outlineStyle={styled.input}
+            theme={{
+                colors: {
+                    onSurfaceVariant: '#E2773B'
+                }
+            }}
             mode="outlined"
-            activeOutlineColor='#1E8187'
+            activeOutlineColor='#E2773B'
             right={
             secureTextEntry ?
             <TextInput.Icon
@@ -27,6 +36,6 @@ export const Input = ({ label, value, onChangeText, secureTextEntry, error, mess
       {error && <HelperText type="error" visible={error}>
         {messageError}
       </HelperText>}
-        </Styled.Wrapper>
+        </View>
     )
 };

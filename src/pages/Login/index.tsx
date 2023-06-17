@@ -64,13 +64,14 @@ const [loading, setLoading] = useState(true);
           )
         })
       }
+        
+            <Button onPress={() => realizarLogin()}>LOGAR</Button>
         </Styled.InputWrapper>
         <Alert 
             message={messageError}
             error={statusError}
             setError={setStatusError}
         />
-            <Button onPress={() => realizarLogin()}>LOGAR</Button>
         </Styled.Wrapper>
     )
 };
