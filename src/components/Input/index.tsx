@@ -3,7 +3,18 @@ import styled from './styles';
 import { useState } from 'react';
 import {View, Text} from 'react-native'
 
-export const Input = ({ label, value, onChangeText, secureTextEntry, error, messageError }) => {
+interface InputProps {
+label: string;
+value: string;
+onChangeText: (any) => void;
+secureTextEntry?: boolean;
+error: boolean;
+messageError: string;
+placeholder: string;
+}
+
+
+export const Input = ({ label, value, onChangeText, secureTextEntry, error, messageError, placeholder }: InputProps) => {
     const [secureMode, setSecureMode] = useState(secureTextEntry);
 
 
@@ -13,18 +24,20 @@ export const Input = ({ label, value, onChangeText, secureTextEntry, error, mess
             label={label}
             value={value}
             error={error}
-            placeholder='teste'
+            placeholder={placeholder}
             secureTextEntry={secureMode}
             onChangeText={onChangeText}
             style={styled.text}
             outlineStyle={styled.input}
             theme={{
                 colors: {
-                    onSurfaceVariant: '#E2773B'
+                    onSurfaceVariant: 'white'
+                
                 }
             }}
             mode="outlined"
-            activeOutlineColor='#E2773B'
+            activeOutlineColor='white'
+            textColor='white'
             right={
             secureTextEntry ?
             <TextInput.Icon

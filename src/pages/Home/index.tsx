@@ -1,18 +1,22 @@
-import {  Text } from 'react-native';
+import {  Text, View } from 'react-native';
 import * as Styled from './styles';
 import { Button } from '../../components/Button';
 import { Logout } from '../../services/firebaseConnection';
+import { HeaderUser } from '../../components/HeaderUser';
+import { Container } from '../../components/Container';
+import { BottomNav } from '../../components/BottomNav';
 
 
 export const Home = ({navigation}) => {
 
-
     return(
-        <Styled.Wrapper>
+        <Container>
+            <HeaderUser/>
           <Text>Teste</Text>
           <Button onPress={() => {
             navigation.replace('Login')
             Logout()}}>Sair</Button>
-        </Styled.Wrapper>
+            <BottomNav/>
+        </Container>
     )
 };
