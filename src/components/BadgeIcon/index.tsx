@@ -19,7 +19,7 @@ export const BadgeIcon = ({ icon, badge, iconSize, color, badgeValue, onPress }:
 
 
     return(
-        <TouchableOpacity style={styled.container} onPress={onPress}>
+        <TouchableOpacity  onPress={onPress}>
             <Icon name={icon} size={iconSize} color={color} />
             {badge && (
                 <Badge size={18} style={styled.badge}>{badgeValue}</Badge>

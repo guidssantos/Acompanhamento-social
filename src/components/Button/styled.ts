@@ -8,12 +8,23 @@ export default StyleSheet.create({
     backgroundColor: "#33384e",
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 20,
+    marginTop: 10,
   },
   textoBotao: {
     fontSize: 15,
     fontFamily: "Roboto",
     fontWeight: "700",
     color: "#fff",
+  },
+  textContainer: {
+    flexDirection: 'row',
+    gap: 10,
+    alignItems: 'center'
+  },
+  badgeStyle: {
+    color: 'black',
+    fontSize: 12,
+    fontWeight: 'bold',
+    backgroundColor: '#E2773B'
   }
 });

@@ -9,17 +9,11 @@ import { BadgeIcon } from '../BadgeIcon';
 
 
 interface HeaderUserProps {
-label: string;
-value: string;
-onChangeText: (any: any) => void;
-secureTextEntry?: boolean;
-error: boolean;
-messageError: string;
-placeholder: string;
+user: {name: string, email: string};
 }
 
 
-export const HeaderUser = ({ label, value, onChangeText, secureTextEntry, error, messageError, placeholder }: HeaderUserProps) => {
+export const HeaderUser = ({ user }: HeaderUserProps) => {
 
 
     return(
@@ -27,8 +21,8 @@ export const HeaderUser = ({ label, value, onChangeText, secureTextEntry, error,
             <View style={styled.userInfoContainer}>
             <InputAvatar typeAvatar='text' size={60} label='GD'/>
                 <View style={styled.textContainer}>
-                    <Text style={styled.text}>Guilherme dos Santos</Text>
-                    <Text style={styled.text}>teste@teste.com</Text>
+                    <Text style={styled.text}>{user.name}</Text>
+                    <Text style={styled.text}>{user.email}</Text>
                 </View>
             </View>
             <BadgeIcon icon='bell-o' badge iconSize={30} color='white' badgeValue={5} onPress={() => console.log('teste')}/>

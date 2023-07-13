@@ -1,9 +1,12 @@
-import styled from 'styled-components/native';
+import { StyleSheet } from "react-native";
 
-export const Wrapper = styled.View`
-
-`
-
-export const InputWrapper = styled.View`
-    gap: 10px;
-`
+export default StyleSheet.create({
+  cardContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginTop: 20
+  },
+  eventCardContainer:{
+    marginTop: 20
+  }
+});

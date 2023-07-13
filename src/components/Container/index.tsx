@@ -10,7 +10,7 @@ children: any;
 
 export const Container = ({ children }: ContainerProps) => {
     StatusBar.setTranslucent(true);
-    StatusBar.setBackgroundColor('white');
+    StatusBar.setBackgroundColor('transparent');
 
     return(
         <View style={{ flex: 1, paddingTop: StatusBar.currentHeight, backgroundColor: '#162231' }}>

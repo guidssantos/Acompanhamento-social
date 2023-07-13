@@ -1,3 +1,4 @@
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { auth } from "../config/firebase";
 import { 
   createUserWithEmailAndPassword, 
@@ -41,7 +42,8 @@ function errosFirebase(error){
 export async function SignIn(email, senha) {
   const result = await signInWithEmailAndPassword(auth, email, senha)
   .then((dadosDoUsuario) => {
-    console.log(dadosDoUsuario)
+    console.log(dadosDoUsuario, "@@@@@@@@@@")
+    AsyncStorage.setItem('user', JSON.stringify(dadosDoUsuario))
     return "sucesso"
   })
   .catch((error) => {
