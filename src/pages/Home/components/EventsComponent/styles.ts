@@ -2,9 +2,8 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
   container: {
-    marginHorizontal: 15,
     borderRadius: 10,
-    paddingVertical: 10
+    paddingVertical: 15
 
   },
   headerContainer:{
@@ -29,7 +28,6 @@ export default StyleSheet.create({
   },
   buttonContainer:{
     marginHorizontal: 15,
-    alignItems: 'center'
   },
   dateTitle:{
     fontWeight: 'bold',

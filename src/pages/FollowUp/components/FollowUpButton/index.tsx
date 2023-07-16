@@ -18,7 +18,7 @@ interface ButtonProps {
   borderRadius?: string;
 }
 
-export const Button = ({ onPress, children, badgeValue, textSize, icon, iconSize, iconColor, paddingButton, positionIcon = 'right', backgroundColor = "#33384e", borderRadius }) => {
+export const FollowUpButton = ({ onPress, children, badgeValue, textSize, icon, iconSize, iconColor, paddingButton, positionIcon = 'right', backgroundColor = "#33384e", borderRadius }) => {
     return(
         <TouchableOpacity style={[styled.botao, {padding: paddingButton, backgroundColor: backgroundColor, borderRadius: borderRadius}]} onPress={onPress}>
           <View style={styled.textContainer}>

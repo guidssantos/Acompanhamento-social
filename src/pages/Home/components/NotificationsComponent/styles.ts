@@ -1,26 +1,18 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-  container: {
-    marginHorizontal: 15,
-    width: 170,
-    height: 170,
-    borderRadius: 10
-
-  },
   headerContainer:{
     flexDirection: 'row',
-    alignSelf: 'center',
     alignItems: 'center',
-    gap: 10,
-    marginTop: 10,
+    gap: 10
   },
   headerTitle:{
     fontSize: 14,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    textAlign: 'left'
   },
   numberTitle:{
-    fontSize: 55,
+    fontSize: 50,
     fontWeight: 'bold',
     textAlign: 'center'
   },

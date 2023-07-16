@@ -4,7 +4,7 @@ import { Badge } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
-interface ButtonProps {
+interface ReportButtonProps {
   children: string | number;
   onPress: () => void;
   badgeValue: number;
@@ -12,13 +12,13 @@ interface ButtonProps {
   icon: string;
   iconSize: number;
   iconColor: string;
-  paddingButton: string;
+  paddingButton: number;
   positionIcon?: "left" | "right";
   backgroundColor?: string;
-  borderRadius?: string;
+  borderRadius?: number;
 }
 
-export const Button = ({ onPress, children, badgeValue, textSize, icon, iconSize, iconColor, paddingButton, positionIcon = 'right', backgroundColor = "#33384e", borderRadius }) => {
+export const ReportButton = ({ onPress, children, badgeValue, textSize, icon, iconSize, iconColor, paddingButton, positionIcon = 'right', backgroundColor = "#33384e", borderRadius }: ReportButtonProps) => {
     return(
         <TouchableOpacity style={[styled.botao, {padding: paddingButton, backgroundColor: backgroundColor, borderRadius: borderRadius}]} onPress={onPress}>
           <View style={styled.textContainer}>

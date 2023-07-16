@@ -9,25 +9,14 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useEffect, useState } from 'react';
 import { CardComponent } from './components/CardComponent';
 import { EventsComponent } from './components/EventsComponent';
+import { NotificationsComponent } from './components/NotificationsComponent';
 
 
 export const Home = ({navigation}) => {
 
-    const [user, setUser] = useState({name: '', email: ''})
-
-    useEffect(() => {
-    AsyncStorage.getItem('user', (err, result) => {
-        const {user} = JSON.parse(result)
-        console.log(result, "RESULTADO!!")
-        setUser({name: user.displayName, email: user.email})
-    })
-    }, [])
-
-    console.log(user, "USER")
-
     return(
         <Container>
-            <HeaderUser user={user}/>
+            <HeaderUser />
             <View style={styled.cardContainer}>
                 <CardComponent 
                 iconSize={30} icon='address-book' title='Acompanhamento' 
@@ -46,7 +35,16 @@ export const Home = ({navigation}) => {
              title='Eventos com ações necessarias'
              />
             </View>
-          <Button onPress={() => {
+            <View style={styled.eventCardContainer}>
+             <NotificationsComponent 
+             titleSize={17}
+             titleColor='white'
+             title='Notificações'
+             />
+            </View>
+          <Button
+            paddingButton={5}
+            onPress={() => {
             navigation.replace('Login')
             Logout()}}>Sair</Button>
             {/* <BottomNav/> */}

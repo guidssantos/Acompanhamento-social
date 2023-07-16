@@ -5,6 +5,8 @@ import { Login } from '../pages/Login';
 import { Home } from '../pages/Home';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {Text} from 'react-native'
+import { FollowUp } from '../pages/FollowUp';
+import { Report } from '../pages/Report';
 
 
 const Stack = createNativeStackNavigator();
@@ -16,13 +18,13 @@ const HomeScreen = () => {
       <Tab.Screen name='Home' component={Home} options={{title: 'Home', tabBarIcon: ({size, color}) => (
         <Icon name='home' size={size} color={color} />
       )}}/>
-      {/* <Tab.Screen name='Acompanhamento' component={() => <Text>teste</Text>} options={{title: 'Acompanhamento', tabBarIcon: ({size, color}) => (
+      <Tab.Screen name='Acompanhamento' component={FollowUp} options={{title: 'Acompanhamento', tabBarIcon: ({size, color}) => (
         <Icon name='address-book' size={size} color={color} />
       )}}/>
-      <Tab.Screen name='Relatorios' component={() => <Text>teste</Text>} options={{title: 'Relatorios', tabBarIcon: ({size, color}) => (
+      <Tab.Screen name='Relatorios' component={Report} options={{title: 'Relatorios', tabBarIcon: ({size, color}) => (
         <Icon name='edit' size={size} color={color} />
       )}}/>
-      <Tab.Screen name='Calendario' component={() => <Text>teste</Text>} options={{title: 'Calendario', tabBarIcon: ({size, color}) => (
+      {/* <Tab.Screen name='Calendario' component={() => <Text>teste</Text>} options={{title: 'Calendario', tabBarIcon: ({size, color}) => (
         <Icon name='calendar' size={size} color={color} />
       )}}/> */}
     </Tab.Navigator>

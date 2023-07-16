@@ -13,7 +13,7 @@ export const Container = ({ children }: ContainerProps) => {
     StatusBar.setBackgroundColor('transparent');
 
     return(
-        <View style={{ flex: 1, paddingTop: StatusBar.currentHeight, backgroundColor: '#162231' }}>
+        <View style={{ flex: 1, paddingTop: StatusBar.currentHeight, backgroundColor: '#162231', paddingHorizontal: 12 }}>
             {children}
         </View>
     )

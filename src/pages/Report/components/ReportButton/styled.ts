@@ -3,8 +3,6 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
   botao: {
     borderRadius: 5,
-    justifyContent: "center",
-    alignItems: "center",
     marginTop: 10,
   },
   textoBotao: {
@@ -15,7 +13,8 @@ export default StyleSheet.create({
   textContainer: {
     flexDirection: 'row',
     gap: 10,
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'space-between'
   },
   badgeStyle: {
     color: 'black',

@@ -65,7 +65,9 @@ const [loading, setLoading] = useState(true);
         })
       }
         
-            <Button onPress={() => realizarLogin()}>LOGIN</Button>
+            <Button 
+            paddingButton={10}
+            onPress={() => realizarLogin()}>LOGIN</Button>
         </Styled.InputWrapper>
         <Alert 
             message={messageError}

@@ -21,12 +21,14 @@ return(
         <Text style={styled.dateTitle}>12/02/2023</Text>
         <View style={styled.buttonContainer}>
         <Button 
+            paddingButton={6}
             badgeValue={5} textSize={12} icon='arrow-right' 
             iconSize={22}  iconColor='#E2773B'
             >
             Famílias aguardam o envio do auxilio gás
         </Button>
         <Button 
+        paddingButton={6}
             badgeValue={5} textSize={12} icon='arrow-right' 
             iconSize={22}  iconColor='#E2773B'
             >
