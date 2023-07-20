@@ -13,7 +13,7 @@ export const Report = ({navigation}) => {
     return(
         <Container>
             <HeaderUser />
-            <BackBottom title="Relatórios" />
+            <BackBottom title="Relatórioss" />
             <ReportButton iconColor='#E2773B' backgroundColor='#2D6980' borderRadius={5} paddingButton={10} icon='arrow-right' iconSize={20} >
                 Lista de Relatórios
             </ReportButton>
