@@ -7,6 +7,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import {Text} from 'react-native'
 import { FollowUp } from '../pages/FollowUp';
 import { Report } from '../pages/Report';
+import {Users} from '../pages/Users';
 
 
 const Stack = createNativeStackNavigator();
@@ -23,6 +24,9 @@ const HomeScreen = () => {
       )}}/>
       <Tab.Screen name='Relatorios' component={Report} options={{title: 'Relatorios', tabBarIcon: ({size, color}) => (
         <Icon name='edit' size={size} color={color} />
+      )}}/>
+      <Tab.Screen name='user' component={Users} options={{title: 'user', tabBarIcon: ({size, color}) => (
+        <Icon name='user' size={size} color={color} />
       )}}/>
       {/* <Tab.Screen name='Calendario' component={() => <Text>teste</Text>} options={{title: 'Calendario', tabBarIcon: ({size, color}) => (
         <Icon name='calendar' size={size} color={color} />

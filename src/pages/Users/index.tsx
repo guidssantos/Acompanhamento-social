@@ -8,17 +8,17 @@ import { ReportButton } from './components/ReportButton';
 
 
 
-export const Report = ({navigation}) => {
+export const Users = ({navigation}) => {
 
     return(
         <Container>
             <HeaderUser />
-            <BackBottom title="Relatórios" />
+            <BackBottom title="Usuários" />
             <ReportButton iconColor='#E2773B' backgroundColor='#2D6980' borderRadius={5} paddingButton={10} icon='arrow-right' iconSize={20} >
-                Lista de Relatórios
+                Lista de Usuários
             </ReportButton>
             <ReportButton iconColor='#E2773B' backgroundColor='#2D6980' borderRadius={5} paddingButton={10} icon='arrow-right' iconSize={20} >
-                Cadastrar Relatórios
+                Cadastro de Usuário
             </ReportButton>
         </Container>
     )
