@@ -10,6 +10,7 @@ import { useNavigation } from '@react-navigation/native';
 export const BackBottom = ({  title }) => {
   const navigation = useNavigation();
 
+
   const handleGoBack = () => {
     navigation.goBack();
   };

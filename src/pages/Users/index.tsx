@@ -14,10 +14,10 @@ export const Users = ({navigation}) => {
         <Container>
             <HeaderUser />
             <BackBottom title="Usuários" />
-            <ReportButton iconColor='#E2773B' backgroundColor='#2D6980' borderRadius={5} paddingButton={10} icon='arrow-right' iconSize={20} >
+            <ReportButton onPress={() => navigation.navigate('ListingUsers')} iconColor='#E2773B' backgroundColor='#2D6980' borderRadius={5} paddingButton={10} icon='arrow-right' iconSize={20} >
                 Lista de Usuários
             </ReportButton>
-            <ReportButton iconColor='#E2773B' backgroundColor='#2D6980' borderRadius={5} paddingButton={10} icon='arrow-right' iconSize={20} >
+            <ReportButton onPress={() => navigation.navigate('Register')} iconColor='#E2773B' backgroundColor='#2D6980' borderRadius={5} paddingButton={10} icon='arrow-right' iconSize={20} >
                 Cadastro de Usuário
             </ReportButton>
         </Container>

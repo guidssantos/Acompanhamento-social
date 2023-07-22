@@ -22,7 +22,7 @@ const [loading, setLoading] = useState(true);
  useEffect(() => {
     const userState = auth.onAuthStateChanged( user => {
       if(user){
-        navigation.replace('Principal')
+        navigation.replace('HomeScreen')
       }
       setLoading(false)
     })

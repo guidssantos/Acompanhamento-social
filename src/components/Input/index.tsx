@@ -8,7 +8,7 @@ label: string;
 value: string;
 onChangeText: (any) => void;
 secureTextEntry?: boolean;
-error: boolean;
+error: string | boolean;
 messageError: string;
 placeholder: string;
 }
