@@ -25,7 +25,7 @@ const HomeScreen = () => {
       <Tab.Screen name='Relatorios' component={Report} options={{title: 'Relatorios', tabBarIcon: ({size, color}) => (
         <Icon name='edit' size={size} color={color} />
       )}}/>
-      <Tab.Screen name='user' component={Users} options={{title: 'user', tabBarIcon: ({size, color}) => (
+      <Tab.Screen name='Usuários' component={Users} options={{title: 'Usuários', tabBarIcon: ({size, color}) => (
         <Icon name='user' size={size} color={color} />
       )}}/>
       {/* <Tab.Screen name='Calendario' component={() => <Text>teste</Text>} options={{title: 'Calendario', tabBarIcon: ({size, color}) => (
