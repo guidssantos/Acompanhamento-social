@@ -17,7 +17,7 @@ export const FollowUp = ({navigation}) => {
             <FollowUpButton iconColor='#E2773B' backgroundColor='#2D6980' borderRadius={5} paddingButton={10} icon='arrow-right' iconSize={20} >
                 Lista de acompanhamento
             </FollowUpButton>
-            <FollowUpButton iconColor='#E2773B' backgroundColor='#2D6980' borderRadius={5} paddingButton={10} icon='arrow-right' iconSize={20} >
+            <FollowUpButton onPress={() => navigation.navigate('RegisterFollowUp')} iconColor='#E2773B' backgroundColor='#2D6980' borderRadius={5} paddingButton={10} icon='arrow-right' iconSize={20} >
                 Cadastrar acompanhamento
             </FollowUpButton>
         </Container>

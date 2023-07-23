@@ -10,6 +10,7 @@ import { Report } from '../pages/Report';
 import {Users} from '../pages/Users';
 import { Register } from '../pages/Users/pages/Register';
 import { ListingUsers } from '../pages/Users/pages/ListingUsers';
+import { RegisterFollowUp } from '../pages/FollowUp/Register';
 
 
 const Stack = createNativeStackNavigator();
@@ -49,6 +50,7 @@ const FollowUpStackScreen = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name='Acompanhamento' component={FollowUp} options={{headerShown: false}} />
+      <Stack.Screen name='RegisterFollowUp' component={RegisterFollowUp} options={{headerShown: false}} />
     </Stack.Navigator>
   )
 }
