@@ -17,7 +17,7 @@ export const Report = ({navigation}) => {
             <ReportButton iconColor='#E2773B' backgroundColor='#2D6980' borderRadius={5} paddingButton={10} icon='arrow-right' iconSize={20} >
                 Lista de Relatórios
             </ReportButton>
-            <ReportButton iconColor='#E2773B' backgroundColor='#2D6980' borderRadius={5} paddingButton={10} icon='arrow-right' iconSize={20} >
+            <ReportButton onPress={() => navigation.navigate('RegisterReport')} iconColor='#E2773B' backgroundColor='#2D6980' borderRadius={5} paddingButton={10} icon='arrow-right' iconSize={20} >
                 Cadastrar Relatórios
             </ReportButton>
         </Container>

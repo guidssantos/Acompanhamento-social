@@ -12,6 +12,7 @@ import { Register } from '../pages/Users/pages/Register';
 import { ListingUsers } from '../pages/Users/pages/ListingUsers';
 import { RegisterFollowUp } from '../pages/FollowUp/Register';
 import { ListingReport } from '../pages/Report/pages/ReportListing';
+import { RegisterReport } from '../pages/Report/pages/RegisterReport';
 
 
 const Stack = createNativeStackNavigator();
@@ -61,6 +62,7 @@ const ReportStackScreen = () => {
     <Stack.Navigator>
       <Stack.Screen name='Relatorios' component={Report} options={{headerShown: false}} />
       <Stack.Screen name='ListingReport' component={ListingReport} options={{headerShown: false}} />
+      <Stack.Screen name='RegisterReport' component={RegisterReport} options={{headerShown: false}} />
     </Stack.Navigator>
   )
 }
